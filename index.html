@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+
+<body>
+<br>
+    <center><h2>FILL THE STUDENT FORM</h2></center>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                
+                    </div>
+                    <div>
+                        <label for="rollno">Roll No:</label>
+	                	<input type="text" id="rollno" name="rollno" required>
+
+                    </div>
+                    <div>
+                        <label>Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other" required>
+                        <label for="other">Other</label>
+                        
+                    </div>
+                    <br>
+                    <div>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob"><br><br>
+                    </div>
+
+                    <div>
+                        <label for="class">Class:</label>
+                           <select id="class" name="class">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                          </select><br><br>
+       
+                    </div>
+
+                    <div>
+                        <label for="mobile">Mobile Number:</label>
+                        <input type="tel" id="mobile" name="mobile">
+                    </div>
+                    <br><br>
+                  
+                <div>
+                    <label for="inputDate">Today Date:</label>
+                    <input type="date" id="inputDate" name="inputDate" required>
+                </div>
+<br>
+<br>
+
+                <div>
+                    <label for="my-date-input">Select a date:</label>
+                    <input type="date" id="my-date-input">
+
+                </div>
+
+                 <div>
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the terms and conditions</label><br>
+                 </div>
+
+                    <div class="form_action-button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+
+                 
+                </form>
+<br>
+                <td>
+                    <table class="list" id="studentform">
+                        <thead>
+                            <tr>
+                                <th>Student name</th>
+                                <th>rollno</th>
+                                <th>Gender</th>
+                                <th>DOB</th>
+                                <th>Class</th>
+                                <th>mobile</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+
+
+    
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
